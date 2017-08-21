@@ -163,54 +163,8 @@ $(document).ready(function(){
 	});
 
 	$("#resetGame").on("click",function(){
-		charObiWan = {
-			charName: "Obi-Wan Kenobi",
-			charImage: "assets/images/obi-wan.jpg",
-			charHealth: 120,
-			charBaseAttack: 8,
-			charCurrentAttack: 8,
-			amIPlayer: false,
-			amIEnemy: false,
-			amIChosen: false
-		};
-
-		charLuke = {
-			charName: "Luke Skywalker",
-			charImage: "assets/images/luke.jpg",
-			charHealth: 100,
-			charBaseAttack: 5,
-			charCurrentAttack: 5,
-			amIPlayer: false,
-			amIEnemy: false,
-			amIChosen: false
-		};
-
-		charPalpatine = {
-			charName: "Emperor Palpatine",
-			charImage: "assets/images/palpatine.jpg",
-			charHealth: 180,
-			charBaseAttack: 20,
-			charCurrentAttack: 20,
-			amIPlayer: false,
-			amIEnemy: false,
-			amIChosen: false
-		};
-
-		charMaul = {
-			charName: "Darth Maul",
-			charImage: "assets/images/maul.png",
-			charHealth: 150,
-			charBaseAttack: 25,
-			charCurrentAttack: 25,
-			amIPlayer: false,
-			amIEnemy: false,
-			amIChosen: false
-		};
 		inBattle = false;
-		playerCharArray[0] = charObiWan;
-		playerCharArray[1] = charLuke;
-		playerCharArray[2] = charPalpatine;
-		playerCharArray[3] = charMaul;
+		playerCharArray = [charObiWan, charLuke, charPalpatine, charMaul];
 		$("#characterList").css("display", "block");
 		$("#characterChoiceSection").css("display", "none");
 		$("#enemyChoiceSection").css("display", "none");
