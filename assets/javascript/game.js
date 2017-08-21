@@ -53,6 +53,7 @@ $(document).ready(function(){
 	var chosenEnemy;
 
 	function setupCharacters() {
+		var i;
 		$("#characterChoiceSection").css("display", "none");					// Hide the character choice section
 		$("#enemyChoiceSection").css("display", "none");						// Hide the enemy choice section
 		for (i = 0; i < playerCharArray.length; i++) {							// For the length of the player character array
@@ -67,6 +68,7 @@ $(document).ready(function(){
 	}
 	
 	function setupEnemies() {
+		var i;
 		enemyCharArray = [];													// Clear the enemy array
 		for (i = 0; i < playerCharArray.length; i++) {							// For the length of the player character array
 			if (!playerCharArray[i].amIChosen) {								// If the player character is not chosen
@@ -77,6 +79,7 @@ $(document).ready(function(){
 	}
 	
 	function displayEnemies() {
+		var i;
 		$("#enemyList").css("display", "block");										// Show enemy list
 		for (i = 0; i < 3; i++) {														// For all characters
 			$("#enemy-"+i).css("display", "none");										// Hide the character
